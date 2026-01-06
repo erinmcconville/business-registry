@@ -1,5 +1,31 @@
 body {
-  font-family: Arial, sans-serif;
-  background: black;
-  color: white;
+  margin: 0;
+  padding: 32px;
+
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+               "Liberation Mono", "Courier New", monospace;
+
+  background: #0f1115;
+  color: #e6e6e6;
+
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  max-width: 60ch;
+  color: #cfcfcf;
+}
+
+a {
+  color: #7dd3c8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
