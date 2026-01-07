@@ -5,7 +5,15 @@ body {
   background: #1b1f23;
   color: #87abda;
 
-  font-family: "Lucida Console", Consolas, "Courier New", monospace;
+  font-family:
+  SFMono-Regular,
+  ui-monospace,
+  Menlo,
+  Consolas,
+  "Liberation Mono",
+  "Courier New",
+  monospace;
+
   font-size: 15px;
   line-height: 1.45;
 }
