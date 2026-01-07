@@ -1,42 +1,51 @@
+/* ===== Base ===== */
+
 body {
   margin: 0;
   padding: 24px;
 
-  background: #1b1f23;
-  color: #87abda;
+  background: #1b1f23;      /* R:27 G:31 B:35 */
+  color: #87abda;           /* R:135 G:171 B:218 */
 
   font-family:
-  SFMono-Regular,
-  ui-monospace,
-  Menlo,
-  Consolas,
-  "Liberation Mono",
-  "Courier New",
-  monospace;
+    SFMono-Regular,
+    ui-monospace,
+    Menlo,
+    Consolas,
+    "Liberation Mono",
+    "Courier New",
+    monospace;
 
-  font-size: 15px;
-  line-height: 1.45;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
 }
 
-/* Headings: subtle, structural only */
-h1 {
-  margin: 0 0 16px 0;
-  color: #dbdde3;
+/* ===== Headings (fully flattened) ===== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  color: #dbdde3;           /* R:219 G:221 B:227 */
+
+  margin: 16px 0 8px 0;
 }
 
-h2 {
-  margin: 24px 0 12px 0;
-  color: #dbdde3;
-}
+/* ===== Paragraphs ===== */
 
-/* Body text */
 p {
-  margin: 0 0 12px 0;
+  margin: 0 0 10px 0;
 }
 
-/* Links */
+/* ===== Links ===== */
+
 a {
-  color: #f05c6f;
+  color: #f05c6f;           /* R:240 G:92 B:111 */
   text-decoration: none;
 }
 
@@ -44,30 +53,63 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Inline code */
+/* ===== Lists ===== */
+
+ul,
+ol {
+  margin: 0 0 10px 0;
+  padding-left: 16px;
+}
+
+li {
+  margin: 0;
+}
+
+/* ===== Inline code ===== */
+
 code {
   font-family: inherit;
   color: #dbdde3;
 }
 
-/* Preformatted blocks */
+/* ===== Preformatted blocks ===== */
+
 pre {
-  margin: 0 0 12px 0;
+  margin: 0 0 10px 0;
   font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
   color: #dbdde3;
+
   white-space: pre-wrap;
 }
 
-/* Horizontal separator */
+/* ===== Horizontal rule ===== */
+
 hr {
   border: none;
   border-top: 1px solid #dbdde3;
   margin: 16px 0;
 }
 
-/* Selection */
+/* ===== Forms (if ever used) ===== */
+
+input,
+textarea,
+select,
+button {
+  background: #1b1f23;
+  color: #87abda;
+  border: 1px solid #dbdde3;
+
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* ===== Selection ===== */
+
 ::selection {
   background: #f05c6f;
   color: #1b1f23;
 }
-
