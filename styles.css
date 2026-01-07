@@ -1,73 +1,29 @@
-:root {
-  --bg: #020403;          /* near-black */
-  --panel: #050a06;       /* lifted surface */
-  --text: #e6ffe6;        /* soft green-white */
-  --muted: #9fd3a5;       /* muted matrix green */
-  --accent: #00ff66;      /* Matrix green */
-}
-
 body {
   margin: 0;
-  padding: 48px;
+  padding: 40px;
 
-font-family: Consolas, "Lucida Console", "Courier New",
-             ui-monospace, monospace;
+  background: #000000;
+  color: #00ff00;
 
-  background: radial-gradient(
-    circle at top,
-    #06150c 0%,
-    var(--bg) 60%
-  );
-
-  color: var(--text);
-  line-height: 1.7;
+  font-family: Consolas, "Lucida Console", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
-/* Headings */
+/* Headings look like big terminal text */
 h1 {
-  font-size: 1.9rem;
-  margin-bottom: 0.75rem;
-  letter-spacing: 0.03em;
-
-  color: var(--accent);
-  text-shadow:
-    0 0 6px rgba(0, 255, 102, 0.5),
-    0 0 18px rgba(0, 255, 102, 0.25);
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 16px;
 }
 
-/* Body text */
+/* Paragraphs */
 p {
-  max-width: 70ch;
-  color: var(--muted);
+  max-width: 80ch;
 }
 
-/* Links */
+/* Optional: links still terminal-green */
 a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  text-shadow: 0 0 8px rgba(0, 255, 102, 0.6);
-}
-
-/* Code / schema blocks */
-.code {
-  background: linear-gradient(
-    180deg,
-    #041008,
-    #020403
-  );
-
-  border: 1px solid rgba(0, 255, 102, 0.25);
-
-  box-shadow:
-    inset 0 0 18px rgba(0, 255, 102, 0.08),
-    0 0 22px rgba(0, 255, 102, 0.12);
-
-  padding: 28px;
-  border-radius: 10px;
-
-  color: #e6ffe6;
-  overflow-x: auto;
+  color: #00ff00;
+  text-decoration: underline;
 }
