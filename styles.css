@@ -1,29 +1,23 @@
 body {
   margin: 0;
-  padding: 40px;
+  padding: 24px;
 
   background: #000000;
-  color: #00ff00;
+  color: #00cc44; /* slightly dimmer than pure neon */
 
   font-family: Consolas, "Lucida Console", "Courier New", monospace;
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 15px;
+  line-height: 1.35;
 }
 
-/* Headings look like big terminal text */
+/* Kill the “heading” look entirely */
 h1 {
-  font-size: 32px;
+  font-size: 15px;
   font-weight: normal;
-  margin-bottom: 16px;
+  margin: 0 0 12px 0;
 }
 
-/* Paragraphs */
+/* Paragraphs look like terminal output */
 p {
-  max-width: 80ch;
-}
-
-/* Optional: links still terminal-green */
-a {
-  color: #00ff00;
-  text-decoration: underline;
+  margin: 0 0 12px 0;
 }
