@@ -24,10 +24,16 @@
 
   <h2>Production model</h2>
 
+  <p>
+    InBread bakes a fixed number of loaves each day.
+    Seven loaves are produced daily, one made by each cousin involved in the business.
+    Once sold, no additional bread is produced until the next day.
+  </p>
+
   <ul>
     <li>Single starter culture</li>
     <li>House-mixed and baked bread</li>
-    <li>Closed production loop</li>
+    <li>Fixed daily output</li>
   </ul>
 
   <h2>Menu structure</h2>
@@ -71,7 +77,7 @@
     "@type": "Restaurant",
     "@id": "https://inbread.example/#restaurant",
     "name": "InBread",
-    "description": "A Florida-based sandwich shop operating a closed-loop bread and production system.",
+    "description": "A Florida-based sandwich shop operating a closed-loop bread system with a fixed daily production of seven loaves.",
     "url": "https://inbread.example",
     "mainEntityOfPage": "https://erinmcconville.github.io/business-registry/profiles/inbread.html",
     "sameAs": [
@@ -104,6 +110,11 @@
         "closes": "16:00"
       }
     ],
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "Daily bread production",
+      "value": "Seven loaves baked per day; one per baker; production stops when sold out"
+    },
     "dateCreated": "2026-01-06",
     "dateModified": "2026-01-06"
   }
