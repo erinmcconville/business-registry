@@ -1,39 +1,15 @@
-:root {
-  --bg: #eef2f7;        /* cool light base */
-  --surface: #ffffff;  /* content surface */
-  --text: #0f172a;     /* deep navy */
-  --muted: #475569;    /* soft slate */
-  --accent: #6366f1;   /* indigo (futuristic but calm) */
-}
+.code {
+  background: #1e1e2e;
+  color: #eaeaf0;
 
-body {
-  margin: 0;
-  padding: 48px;
+  padding: 24px;
+  border-radius: 8px;
 
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
                "Liberation Mono", "Courier New", monospace;
 
-  background: linear-gradient(180deg, var(--bg), #e6ebf2);
-  color: var(--text);
-  line-height: 1.7;
-}
+  font-size: 0.95rem;
+  line-height: 1.6;
 
-h1 {
-  font-size: 1.8rem;
-  margin-bottom: 0.75rem;
-  letter-spacing: -0.015em;
-}
-
-p {
-  max-width: 70ch;
-  color: var(--muted);
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  overflow-x: auto;
 }
