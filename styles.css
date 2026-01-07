@@ -1,9 +1,9 @@
 :root {
-  --bg: #05070d;        /* deep space black */
-  --panel: #0b1020;     /* slightly lifted surface */
-  --text: #e5f6ff;      /* soft cyan-white */
-  --muted: #8fbcd4;     /* dimmed cyan */
-  --accent: #00e5ff;    /* Tron cyan */
+  --bg: #020403;          /* near-black */
+  --panel: #050a06;       /* lifted surface */
+  --text: #e6ffe6;        /* soft green-white */
+  --muted: #9fd3a5;       /* muted matrix green */
+  --accent: #00ff66;      /* Matrix green */
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 
   background: radial-gradient(
     circle at top,
-    #0b1020 0%,
+    #06150c 0%,
     var(--bg) 60%
   );
 
@@ -27,9 +27,12 @@ body {
 h1 {
   font-size: 1.9rem;
   margin-bottom: 0.75rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
+
   color: var(--accent);
-  text-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
+  text-shadow:
+    0 0 6px rgba(0, 255, 102, 0.5),
+    0 0 18px rgba(0, 255, 102, 0.25);
 }
 
 /* Body text */
@@ -45,25 +48,26 @@ a {
 }
 
 a:hover {
-  text-shadow: 0 0 8px rgba(0, 229, 255, 0.6);
+  text-shadow: 0 0 8px rgba(0, 255, 102, 0.6);
 }
 
-/* Code blocks (optional, very Tron) */
+/* Code / schema blocks */
 .code {
   background: linear-gradient(
     180deg,
-    #0b1020,
-    #05070d
+    #041008,
+    #020403
   );
 
-  border: 1px solid rgba(0, 229, 255, 0.25);
+  border: 1px solid rgba(0, 255, 102, 0.25);
+
   box-shadow:
-    inset 0 0 20px rgba(0, 229, 255, 0.08),
-    0 0 20px rgba(0, 229, 255, 0.15);
+    inset 0 0 18px rgba(0, 255, 102, 0.08),
+    0 0 22px rgba(0, 255, 102, 0.12);
 
   padding: 28px;
   border-radius: 10px;
 
-  color: #e5f6ff;
+  color: #e6ffe6;
   overflow-x: auto;
 }
