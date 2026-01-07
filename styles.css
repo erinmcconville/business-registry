@@ -10,8 +10,8 @@ body {
   margin: 0;
   padding: 48px;
 
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-               "Liberation Mono", "Courier New", monospace;
+font-family: Consolas, "Lucida Console", "Courier New",
+             ui-monospace, monospace;
 
   background: radial-gradient(
     circle at top,
