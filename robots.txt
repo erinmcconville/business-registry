@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://erinmcconville.github.io/business-registry/sitemap.xml
